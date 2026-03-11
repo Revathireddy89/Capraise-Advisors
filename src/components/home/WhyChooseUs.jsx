@@ -24,52 +24,63 @@ function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-slate-900 mb-4">Why Choose Capraise?</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">We deliver excellence through expertise, innovation, and personalized service</p>
-          <div className="w-16 h-1 bg-gradient-to-r from-green-500 to-green-400 mx-auto mt-6"></div>
+        <div className="text-center mb-20">
+          <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-4 motion-fade-in">Why Choose Capraise?</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto motion-fade-in" style={{animationDelay: '0.1s'}}>We deliver excellence through expertise, innovation, and personalized service</p>
+          <div className="w-20 h-1 bg-gradient-to-r from-green-500 via-green-400 to-transparent mx-auto mt-8"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {reasons.map((reason, idx) => {
             const IconComponent = reason.icon;
             return (
             <div 
               key={idx}
-              className="motion-fade-in group relative bg-white p-8 rounded-xl border border-gray-200 hover:border-green-400 hover:shadow-xl transition-all duration-300"
+              className="motion-fade-in group relative p-8 rounded-2xl border border-gray-200 bg-white hover:border-green-400 hover:shadow-xl transition-all duration-300"
               style={{animationDelay: reason.delay}}
             >
-              {/* Top accent bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 via-green-400 to-transparent rounded-t-xl group-hover:from-green-400 group-hover:via-green-300 group-hover:to-transparent transition-all duration-300"></div>
-              
-              {/* Icon Circle */}
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-green-100 to-green-50 rounded-lg mb-6 group-hover:from-green-200 group-hover:to-green-100 transition-all duration-300">
-                <IconComponent className="w-7 h-7 text-green-600" />
+              {/* Number badge */}
+              <div className="absolute -top-4 -right-4 w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform">
+                {idx + 1}
               </div>
+
+              {/* Top accent bar */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 via-green-400 to-transparent rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               {/* Content */}
-              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-green-600 transition-colors">{reason.title}</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">{reason.description}</p>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-green-600 transition-colors">{reason.title}</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">{reason.description}</p>
+
+              {/* Feature List */}
+              <ul className="space-y-3">
+                <li className="flex items-center text-gray-700">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Expert consultation
+                </li>
+                <li className="flex items-center text-gray-700">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Proven track record
+                </li>
+                <li className="flex items-center text-gray-700">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  Dedicated support
+                </li>
+              </ul>
               
-              {/* Arrow indicator */}
-              <div className="flex items-center text-green-600 font-semibold text-sm group-hover:translate-x-2 transition-transform">
-                Learn more →
-              </div>
-              
-              {/* Bottom gradient accent */}
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-green-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-b-xl"></div>
+              {/* Bottom glow on hover */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-0 group-hover:opacity-100 rounded-b-2xl transition-opacity duration-300"></div>
             </div>
             );
           })}
         </div>
 
         {/* Bottom CTA Section */}
-        <div className="mt-16 pt-16 border-t border-gray-200 text-center">
-          <h3 className="text-3xl font-bold text-slate-900 mb-4">Ready to elevate your financial strategy?</h3>
-          <p className="text-lg text-gray-600 mb-8">Let's explore how Capraise can help you achieve your goals</p>
-          <a href="/contact" className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+        <div className="mt-20 pt-16 border-t border-gray-200 text-center">
+          <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 motion-fade-in">Ready to Elevate Your Financial Strategy?</h3>
+          <p className="text-lg text-gray-600 mb-10 motion-fade-in" style={{animationDelay: '0.1s'}}>Let's explore how Capraise can help you achieve your goals</p>
+          <a href="/contact" className="inline-block px-10 py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg motion-fade-in" style={{animationDelay: '0.2s'}}>
             Schedule a Consultation
           </a>
         </div>

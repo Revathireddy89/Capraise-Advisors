@@ -8,21 +8,21 @@ function ServicesPreview() {
       icon: FiDollarSign,
       title: 'Fundraising',
       description: 'Debt syndication, private equity syndication, and M&A advisory to meet your funding needs.',
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=250&fit=crop',
+      image: '/Assets/Home/funding.jpg',
       delay: '0s'
     },
     {
       icon: FiRefreshCw,
       title: 'Restructuring',
       description: 'Financial, operational, organizational, and strategic restructuring for sustainable growth.',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop',
+      image: '/Assets/Home/Restructuring.jpg',
       delay: '0.2s'
     },
     {
       icon: FiBarChart2,
       title: 'Advisory',
       description: 'Startup, capital market, corporate, family office, and special situations advisory.',
-      image: 'https://images.unsplash.com/photo-1460925895917-adf4e565db7d?w=400&h=250&fit=crop',
+      image: '/Assets/Home/Advisory.jpg',
       delay: '0.4s'
     }
   ];

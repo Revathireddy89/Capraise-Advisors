@@ -67,7 +67,7 @@ function HeroSection() {
               {/* Inner frame */}
               <div className="relative p-1 bg-gradient-to-br from-green-500/30 to-transparent rounded-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=500&fit=crop" 
+                  src="/Assets/Home/Banner.jpg" 
                   alt="Business Meeting"
                   className="w-full h-72 lg:h-96 object-cover rounded-lg"
                 />

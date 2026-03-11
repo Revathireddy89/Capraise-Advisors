@@ -15,7 +15,7 @@ function HighlightsSection() {
           <div className="motion-float">
             <div className="relative group">
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=450&fit=crop" 
+                src="/Assets/Home/Businesses.jpg" 
                 alt="Success Stories"
                 className="relative rounded-2xl w-full h-auto object-cover shadow-lg group-hover:shadow-xl transition-all duration-300"
               />
