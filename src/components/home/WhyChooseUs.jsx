@@ -34,7 +34,7 @@ function WhyChooseUs() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {reasons.map((reason, idx) => {
-            const IconComponent = reason.icon;
+            
             return (
             <div 
               key={idx}
