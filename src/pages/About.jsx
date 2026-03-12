@@ -8,13 +8,15 @@ import AboutCTA from '../components/about/AboutCTA';
 
 function About() {
   return (
-    <div className="pt-24">
-      <AboutHero />
+    <div className="w-full bg-white">
+      <div className="pt-16">
+        <AboutHero />
       <WhoWeAre />
       <MissionVision />
       <WeAspireToServe />
       <OurApproach />
       <AboutCTA />
+      </div>
     </div>
   );
 }

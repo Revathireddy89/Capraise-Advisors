@@ -5,13 +5,13 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-600 to-blue-700 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex flex-col items-center leading-tight">
               <span className="text-2xl font-bold text-white">Capraise</span>
-              <span className="text-2xl font-light text-blue-50 ml-2">Advisors</span>
+              <span className="text-xs font-light text-blue-50">Advisors</span>
             </Link>
           </div>
           
