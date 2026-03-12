@@ -36,14 +36,14 @@ function WhoWeServe() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-green-50">
+    <section className="py-20 bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-slate-900 mb-4 motion-fade-in">Who We Serve</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto motion-fade-in" style={{animationDelay: '0.2s'}}>
             We provide tailored solutions for diverse client segments across the financial ecosystem
           </p>
-          <div className="w-16 h-1 bg-gradient-to-r from-green-500 to-green-400 mx-auto mt-6"></div>
+          <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mt-6"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -52,16 +52,16 @@ function WhoWeServe() {
             return (
             <div
               key={idx}
-              className="motion-fade-in group bg-white p-8 rounded-xl border border-gray-200 hover:border-green-400 hover:shadow-xl transition-all duration-300 relative"
+              className="motion-fade-in group bg-white p-8 rounded-xl border border-gray-200 hover:border-blue-400 hover:shadow-xl transition-all duration-300 relative"
               style={{animationDelay: `${idx * 0.08}s`}}
             >
               {/* Top accent bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 to-emerald-400 rounded-t-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-emerald-400 rounded-t-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-green-100 to-green-50 rounded-lg mb-4 group-hover:from-green-200 group-hover:to-green-100 transition-all duration-300">
-                <IconComponent className="w-7 h-7 text-green-600 group-hover:text-green-700 transition-colors" />
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg mb-4 group-hover:from-blue-200 group-hover:to-blue-100 transition-all duration-300">
+                <IconComponent className="w-7 h-7 text-blue-600 group-hover:text-blue-700 transition-colors" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-green-600 transition-colors">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
                 {client.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -69,7 +69,7 @@ function WhoWeServe() {
               </p>
 
               {/* Arrow indicator */}
-              <div className="mt-6 flex items-center text-green-600 font-semibold text-sm group-hover:translate-x-2 transition-transform">
+              <div className="mt-6 flex items-center text-blue-600 font-semibold text-sm group-hover:translate-x-2 transition-transform">
                 Learn More →
               </div>
             </div>
@@ -83,7 +83,7 @@ function WhoWeServe() {
           <p className="text-lg text-gray-600 mb-8 motion-fade-in" style={{animationDelay: '0.1s'}}>
             Every business is unique. Let's explore how Capraise can help your organization thrive.
           </p>
-          <a href="/contact" className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg motion-fade-in" style={{animationDelay: '0.2s'}}>
+          <a href="/contact" className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg motion-fade-in" style={{animationDelay: '0.2s'}}>
             Start a Conversation
           </a>
         </div>
@@ -93,3 +93,4 @@ function WhoWeServe() {
 }
 
 export default WhoWeServe;
+

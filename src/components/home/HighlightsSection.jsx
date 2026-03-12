@@ -26,7 +26,7 @@ function HighlightsSection() {
           <div className="pl-4 lg:pl-8">
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8 motion-fade-in leading-tight">
               Transforming<br/>
-              <span className="text-green-600">Businesses</span><br/>
+              <span className="text-blue-600">Businesses</span><br/>
               Worldwide
             </h2>
             
@@ -46,7 +46,7 @@ function HighlightsSection() {
                   className="motion-slide-in flex items-center gap-4 py-3"
                   style={{animationDelay: highlight.delay}}
                 >
-                  <div className="flex-shrink-0 flex items-center justify-center h-8 w-8 rounded-full bg-green-600 hover:bg-green-700 transition-colors">
+                  <div className="flex-shrink-0 flex items-center justify-center h-8 w-8 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors">
                     <svg className="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
@@ -65,3 +65,4 @@ function HighlightsSection() {
 }
 
 export default HighlightsSection;
+
